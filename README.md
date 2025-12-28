@@ -25,7 +25,9 @@ git clone https://github.com/liransn5/Movement-v3.git
 "ConnectionStrings": {
   "DataRetriever": "Server=host.docker.internal;Database=DataRetrieverDb;User Id=YOUR_USER;Password=YOUR_PASSWORD;Encrypt=False;"
 }
+```
 
 3. Navigate to the root of the repository and run the batch script
-``
+```
 <Path-to-repo-root>\DataRetriever\DataRetriever\RunAll.bat
+```
