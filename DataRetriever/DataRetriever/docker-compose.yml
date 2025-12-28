@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: dataretriever-api
+    ports:
+      - "8080:8080"
+    #environment:
+      #ConnectionStrings__Default: "Server=host.docker.internal;Database=DataRetrieverDb;Trusted_Connection=True;TrustServerCertificate=True"
+      #RedisStorageConfig__ConnectionString: "redis:6379"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: dataretriever-redis
+    ports:
+      - "6379:6379"

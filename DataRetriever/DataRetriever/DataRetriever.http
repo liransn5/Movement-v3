@@ -1,0 +1,6 @@
+@DataRetriever_HostAddress = http://localhost:5172
+
+GET {{DataRetriever_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
